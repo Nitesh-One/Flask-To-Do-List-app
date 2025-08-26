@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.task-form input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.task-form input[type="text"]:focus {
+  border-color: #0059b3;
+}
+
+.task-form button {
+  background-color: #0059b3;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #004080;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  margin-bottom: 12px;
+  padding: 14px 20px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-left: 8px;
+  user-select: none;
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #1e7e34;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
